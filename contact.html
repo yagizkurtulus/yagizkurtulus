@@ -6,7 +6,7 @@
     <title>Namaz Vakitleri</title>
     <meta
       name="description"
-      content="Namaz vakitleri gizlilik politikası."
+      content="Namaz Vakitleri destek ve iletişim sayfası."
     />
     <style>
       :root {
@@ -74,23 +74,10 @@
         color: var(--ink);
       }
 
-      .privacy-block {
-        background: #fff;
-        border-radius: 16px;
-        padding: 22px;
-        border: 1px solid rgba(0, 0, 0, 0.08);
-        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.05);
-      }
-
       h2 {
         font-family: "Bitter", "Georgia", serif;
         font-size: 28px;
         margin: 0 0 16px;
-      }
-
-      h3 {
-        margin: 0 0 10px;
-        font-size: 17px;
       }
 
       p {
@@ -98,10 +85,63 @@
         color: var(--muted);
       }
 
-      ul {
-        margin: 0 0 12px;
-        padding-left: 18px;
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 16px;
+        padding: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.05);
+      }
+
+      .card h3 {
+        margin: 0 0 8px;
+        font-size: 17px;
+      }
+
+      .card p {
+        margin: 0;
+        font-size: 14px;
+      }
+
+      .info-list {
+        margin: 14px 0 0;
+        padding: 0;
+        list-style: none;
         color: var(--muted);
+        font-size: 14px;
+      }
+
+      .info-list li {
+        padding: 6px 0;
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+      }
+
+      .info-list li:last-child {
+        border-bottom: none;
+      }
+
+      .contact-highlight {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        margin-top: 20px;
+      }
+
+      .contact-highlight strong {
+        color: var(--ink);
+      }
+
+      .mailto {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 600;
       }
 
       footer {
@@ -130,64 +170,46 @@
           <img src="app-icon.png" alt="Namaz Vakitleri uygulama ikonu" />
           <div>
             <h1>Namaz Vakitleri</h1>
-            
           </div>
         </div>
         <nav>
           <a href="marketing.html">Ana Sayfa</a>
-          <a href="contact.html">İletişim</a>
+          <a href="privacy.html">Gizlilik Politikası</a>
         </nav>
       </header>
 
-      <h2>Gizlilik Politikası</h2>
-      <div class="privacy-block">
-        <p><strong>Son güncelleme:</strong> 17 Şubat 2026</p>
-        <p>
-          Namaz Vakitleri uygulaması, Türkiye genelindeki vakit
-          bilgilerini göstermek ve bildirimler göndermek için tasarlanmıştır. Bu
-          sayfa, uygulamanın hangi verileri kullandığını ve nasıl koruduğunu
-          açıklar.
-        </p>
+      <h2>İletişim</h2>
+      <p>
+        Destek, öneri ve iş birliği talepleriniz için bize aşağıdaki kanallardan
+        ulaşabilirsiniz. En kısa sürede dönüş yapmaya çalışıyoruz.
+      </p>
 
-        <h3>Toplanan Veriler</h3>
-        <p>
-          Uygulama doğrudan kişisel veri toplamaz ve kendi sunucularında kullanıcı
-          hesabı tutmaz.
-        </p>
+      <div class="contact-grid">
+        <div class="card">
+          <h3>E-posta</h3>
+          <p>
+            <a class="mailto" href="mailto:yagiz_kurtuluss@hotmail.com"
+              >yagiz_kurtuluss@hotmail.com</a
+            >
+          </p>
+        </div>
+        <div class="card">
+          <h3>Yanıt Süresi</h3>
+          <p>Ortalama 24-48 saat içinde dönüş yapılır.</p>
+        </div>
+        <div class="card">
+          <h3>Konular</h3>
+          <p>Uygulama hataları, öneriler, reklam & iş birlikleri.</p>
+        </div>
+      </div>
 
-        <h3>İzinler ve Kullanım Amaçları</h3>
-        <ul>
-          <li><strong>Konum (opsiyonel):</strong> Yakın şehir önerisi ve kıble pusulası için kullanılır.</li>
-          <li><strong>Bildirimler:</strong> Ezan vakitlerinde yerel hatırlatma göndermek için kullanılır.</li>
-          <li><strong>Pusula/Sensör Verisi:</strong> Kıble yönünü hesaplamak için kullanılır.</li>
+      <div class="contact-highlight">
+        <h3>Yaygın Sorular</h3>
+        <ul class="info-list">
+          <li>Bildirimler gelmiyor: Cihaz ayarlarından bildirim iznini kontrol edin.</li>
+          <li>Konum yanlış: Yakın şehir önerisini seçmeyi deneyin.</li>
+          <li>Reklamlar: iOS izni kapalıysa kişiselleştirilmiş reklam gösterilmez.</li>
         </ul>
-
-        <h3>Reklam ve İzleme</h3>
-        <p>
-          Uygulama, Google Mobile Ads kullanabilir. iOS’ta kişiselleştirilmiş reklamlar
-          için takip izni istenir. İzin verilmezse yalnızca kişiselleştirilmemiş reklamlar
-          gösterilir.
-        </p>
-
-        <h3>Üçüncü Taraf Hizmetler</h3>
-        <p>
-          Google Mobile Ads SDK’sı kullanılıyorsa, reklam gösterimi sırasında cihaz
-          bilgileri ve reklam tanımlayıcıları işlenebilir. Bu işleme, ilgili sağlayıcının
-          politikalarına tabidir.
-        </p>
-
-        <h3>Veri Saklama</h3>
-        <p>
-          Konum ve ayar tercihleri, yalnızca cihaz üzerinde saklanır. Geliştirici tarafında
-          saklanan kullanıcı verisi bulunmaz.
-        </p>
-
-        <h3>İletişim</h3>
-        <p>
-          Gizlilikle ilgili sorular için
-          <strong>yagiz_kurtuluss@hotmail.com</strong> adresine e-posta
-          gönderebilirsiniz.
-        </p>
       </div>
 
       <footer>
